@@ -1,16 +1,20 @@
-export type Tag = "Todo" | "Personal" | "Work" | "Meeting" | "Shopping";
-
 export interface Note {
-  id: number;
-  title: string;
-  content: string;
-  tag: Tag;
-  createdAt: string;
-  updatedAt: string;
+  id: string,
+  title: string,
+  content: string,
+  createdAt: string,    
+  updatedAt: string,
+  tag: Tags,
 }
 
-export interface NewNoteData {
-  title: string;
-  content: string;
-  tag: Tag;
+export interface NewNote {
+  title: string
+  content: string
+  tag: Tags
 }
+export interface fetchNotesResponse {
+  notes: Note[],
+  totalPages: number,
+}
+
+export type Tags = "Work" | "Personal" | "Meeting" | "Shopping" | "Todo"

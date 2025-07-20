@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
-  padding: 0;
+  padding: 32px;
   margin: 0;
   list-style: none;
 }
@@ -33,7 +33,6 @@
   color: #495057;
   margin-bottom: 12px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -49,11 +48,25 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .button:hover {
   background-color: #bb2d3b;
 }
 
+.details {
+  align-self: flex-end;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #090067;
+  background-color: #98cfff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.details:hover {
+  background-color: #85c6ff;
+}
 .footer {
   display: flex;
   justify-content: space-between;
